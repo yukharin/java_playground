@@ -6,7 +6,7 @@ group = "com.yukharin"
 version = "1.0-SNAPSHOT"
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
 }
 
 repositories {
@@ -14,9 +14,9 @@ repositories {
 }
 
 dependencies {
-    val lombokVersion = "1.18.24"
+    val lombokVersion = "1.18.32"
 
-    implementation("org.springframework.boot:spring-boot-starter-logging:2.7.5")
+    implementation("org.springframework.boot:spring-boot-starter-logging:3.3.0")
     compileOnly("org.projectlombok", "lombok", lombokVersion)
     annotationProcessor("org.projectlombok", "lombok", lombokVersion)
 
